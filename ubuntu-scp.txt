@@ -1,0 +1,8 @@
+Sending file
+
+scp /home/[sender-username]/path/to/file/file.txt [recever-pc-username]@[local-ip-addess-of-pc]:~/path/to/send
+
+Sending Directory along with data
+the following command will send all data within the directory
+
+scp -r /home/[sender-username]/path/to/directory/ [recever-pc-username]@[local-ip-addess-of-pc]:~/path/to/send
