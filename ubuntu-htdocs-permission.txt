@@ -1,0 +1,12 @@
+You need to change permissions or ownership of htdocs directory. To change the permissions use the chmod command, for example:
+
+$sudo chmod -R 755 /opt/lampp/htdocs
+To see who is currently logged user, run:
+
+$whoami
+To change the owner use the chown command:
+
+$sudo chown -R username:username /opt/lampp/htdocs
+Also, you can use find command to change the permissions only on specific files. For example, to change the permissions on all css files in htdocs directory run the following command:
+
+sudo find /opt/lampp/htdocs -type f -name "*.css"  -exec chmod 755 {} \;
