@@ -1,0 +1,50 @@
+connecting system using SSH Via terminal
+
+1. Install openssh server to both system
+
+$ sudo apt update
+$ sudo apt install openssh-server
+
+2. now connecting system
+
+$ ssh username@ip_address
+ex-: ssh user@192.168.0.110
+
+output
+################
+The authenticity of host '192.168.0.110 (192.168.0.110)' can't be established.
+ECDSA key fingerprint is SHA256:Vybt22mVXuNuB5unE++yowF7lgA/9/2bLSiO3qmYWBY.
+Are you sure you want to continue connecting (yes/no)?
+
+Type yes and you’ll be prompted to enter your password.
+
+output
+################
+Warning: Permanently added '192.168.0.110' (ECDSA) to the list of known hosts.
+user@192.168.0.110's password:
+
+output
+################
+Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-33-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+...
+---------------------------------------------------------------------------------------------------------------------------
+
+Check Status of SSH
+$ sudo systemctl status ssh
+
+Start SSH
+$ sudo systemctl start ssh
+
+Stop SSH
+$ sudo systemctl stop ssh
+
+Disable SSH
+$ sudo systemctl disable ssh
+
+Enable SSH
+$ sudo systemctl disable ssh
